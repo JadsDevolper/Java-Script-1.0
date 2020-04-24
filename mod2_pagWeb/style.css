@@ -1,0 +1,174 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap";
+
+:root {
+  --color-link: rgb(87, 87, 87);
+  --color-card: rgb(27, 27, 27);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}      
+
+body {
+  background-color: rgb(70, 70, 70);
+  font-family: 'Abhaya Libre', serif;
+}
+
+ header div#menu {  
+  margin: 0 10px;
+  text-align: center;  
+  padding: 10px;
+  border-bottom: 1px solid rgb(42, 42, 42);
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  box-shadow: 4px 4px 9px rgba(58, 59, 59, 0.575);
+} 
+
+header div a {
+  
+  color:rgba(195, 195, 195, 0.692);
+  font-size: 58px;  
+  margin: 0 46px; 
+  padding-bottom: 1px;
+  text-decoration: none;
+  
+} 
+   
+header div a:hover {        
+  color: rgb(255, 255, 255);
+  font-size:66px;
+  transition: 1s ease;  
+  transition: all 700ms ease;
+  
+}
+
+#wrapper {
+  text-align: center;
+  padding: 32px;
+  color: rgb(216, 213, 213);
+
+}
+#wrapper img {
+  width: 320px;
+  height: 305px;  
+  border-radius: 50%;
+  border: 7px solid  rgba(203, 211, 210, 0.472);
+  box-shadow: 4px 4px 9px rgba(0, 1, 2, 0.575);
+}
+
+#wrapper h1 {
+  font-size: 52px;
+  line-height: 72px;
+  font-weight: bold;
+}
+
+#wrapper p {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: normal;
+  margin-top: 8px;
+}
+#wrapper a {
+  color: var(--color-link);
+}
+
+#redes {
+  text-align: center;
+  margin-top: 170px;
+}
+.links a {
+  color: black;
+  line-height: 18px;
+  margin: 0 25px;  
+  text-decoration: none;
+
+}
+.links a:hover {
+  color: var(--color-link);
+}
+
+/*=== CARDS ===*/
+img {
+  height: 170px;
+}
+.cards {
+  max-width: 990px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-card);
+
+}
+
+.card__image-container img {
+  width: 100%;
+}
+
+.card__content,
+.card__info {
+  padding: 24px;
+  background-color: var(--color-card);
+  color: rgb(202, 202, 202);
+}
+
+.card__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+  background-color:  var(--color-card);
+  filter: brightness(88%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/*=== MODAL===*/
+
+.modal-overlay {
+  background-color: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;  
+}
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+
+}
+/*=== MODAL ACTIVE===*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+iframe {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
